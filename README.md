@@ -1,21 +1,87 @@
-# Task 1 – Java File Handling
+# Multithreaded Chat Application (Java)
 
-## Objective
-To demonstrate file handling in Java by performing write, read, and modify operations on a text file.
+## 📌 Project Description
+This project is a client-server chat application developed using Java Socket Programming and Multithreading.  
+The server allows multiple clients to connect simultaneously and exchange messages in real time.
 
-## Description
-This project shows how Java handles files using FileWriter, FileReader, BufferedWriter, and BufferedReader.
-The program creates a file, writes data to it, appends new content, and reads the file contents.
+Each connected client is handled using a separate thread, enabling concurrent communication between multiple users.
 
-## Technologies Used
+---
+
+## 🚀 Features
+- Supports multiple clients simultaneously
+- Real-time message broadcasting
+- Username-based chat system
+- Join and leave notifications
+- Multithreaded server architecture
+- Synchronized message handling
+
+---
+
+## 🛠 Technologies Used
 - Java
-- java.io package
+- ServerSocket & Socket
+- Multithreading (Thread class)
+- BufferedReader & PrintWriter
+- HashSet Collection
 
-## How to Run
-1. Compile the program using:
-   javac FileHandler.java
-2. Run the program using:
-   java FileHandler
+---
 
-## Output
-The program creates a text file named sample.txt, writes initial content, appends new data, and displays the file contents.
+## 📂 Project Structure
+
+Task3_ChatApp/
+│
+├── Server.java
+├── Client.java
+└── README.md
+
+
+---
+
+## ▶️ How to Run the Project
+
+### 1️⃣ Compile the files
+
+javac Server.java
+javac Client.java
+
+
+### 2️⃣ Run the Server
+
+java Server
+
+
+### 3️⃣ Run Clients (Open multiple terminals)
+
+java Client
+
+
+Enter different usernames in each client and start chatting.
+
+---
+
+## 📷 Sample Output
+- Server starts and listens on port 5000
+- Clients connect and enter usernames
+- Join message is displayed
+- Messages are broadcast to all connected clients
+- Leave message is displayed when a client exits
+
+---
+
+## 📚 Concepts Used
+- Socket Programming
+- ServerSocket
+- Client-Server Architecture
+- Multithreading
+- Synchronization
+- Collections Framework (HashSet)
+
+---
+
+## 🎯 Learning Outcome
+Through this project, I learned how to:
+- Build a client-server architecture
+- Handle multiple clients using threads
+- Implement real-time communication
+- Manage shared resources using synchronization
